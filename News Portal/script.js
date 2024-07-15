@@ -70,7 +70,7 @@ const searchFormMobile = document.getElementById("searchFormMobile");
 const searchInputDesktop = document.getElementById("searchInput");
 const searchInputMobile = document.getElementById("searchInputMobile");
 
-searchFormDesktop.addEventListener("submit", async(e) => {
+searchFormDesktop.addEventListener("submit", async (e) => {
     e.preventDefault();
     const query = searchInputDesktop.value.trim();
     if (query) {
@@ -83,7 +83,7 @@ searchFormDesktop.addEventListener("submit", async(e) => {
     }
 });
 
-searchFormMobile.addEventListener("submit", async(e) => {
+searchFormMobile.addEventListener("submit", async (e) => {
     e.preventDefault();
     const query = searchInputMobile.value.trim();
     if (query) {
