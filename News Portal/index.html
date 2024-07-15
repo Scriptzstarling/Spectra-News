@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpectraNews</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- CSS style -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <img src="Spectra.png" width="200px" />
+        <div class="inputSearch desktop">
+            <form id="searchForm">
+                <input type="text" placeholder="Type to search..." id="searchInput" />
+                <span id="searchIconDesktop"> <i class="fa-solid fa-search"></i></span>
+            </form>
+        </div>
+        <nav class="desktop">
+            <ul>
+                <li onclick="search('daily')">General</li>
+                <li onclick="search('business')">Business</li>
+                <li onclick="search('sports')">Sports</li>
+                <li onclick="search('tech')">Tech</li>
+                <li onclick="search('food')">Food</li>
+            </ul>
+        </nav>
+        <div class="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mobile hidden">
+            <nav>
+                <ul>
+                    <li onclick="search('daily')">General</li>
+                    <li onclick="search('business')">Business</li>
+                    <li onclick="search('sports')">Sports</li>
+                    <li onclick="search('tech')">Tech</li>
+                    <li onclick="search('food')">Food</li>
+                </ul>
+            </nav>
+            <div class="inputSearch">
+                <form id="searchFormMobile">
+                    <input type="text" id="searchInputMobile" placeholder="Type to search..." />
+                    <span id="searchIconMobile"><i class="fa-solid fa-search"></i></span>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h5 class="footer-title">Scriptz<span class="text-warning">Starling</span></h5>
+                <p class="footer-text">© 2024 Scriptzstarling. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="loadingSpinner" class="loading">Loading...</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
